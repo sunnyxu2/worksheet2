@@ -1,0 +1,17 @@
+    1  grep $'[0-9]\t[A-Z]\tY\t' -m 1 amazon_reviews_us_Books_v1_02.tsv 
+    2  grep $'[0-9]\t[A-Z]\tN\t' -m 1 amazon_reviews_us_Books_v1_02.tsv 
+    3  grep $'[0-9]\t[A-Z]\tN\t' amazon_reviews_us_Books_v1_02.tsv > unverified.txt
+    4  grep $'[0-9]\t[A-Z]\tY\t' amazon_reviews_us_Books_v1_02.tsv > verified.txt
+    5  wc unverified.txt > counts.txt
+    6  wc verified.txt >> counts.txt
+    7  cat counts.txt
+    8  history
+    9  vi counts.txt
+   10  cat counts.txt
+   11  history
+   12  cd worksheet2
+   13  ls
+   14  cd
+   15  mv counts.txt worksheet2
+   16  history > /worksheet2/cmds.log
+   17  history > cmds.log
